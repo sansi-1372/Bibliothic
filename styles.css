@@ -1,0 +1,254 @@
+/**********************************TAG SELECTORS************************************/
+a {
+    text-decoration: none;
+    color: #182747;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    /* font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; */
+}
+a:visited {
+    color: #182747;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+a:hover {
+    color: #182747;
+}
+
+aside {
+    margin-left: 10px;
+    width: 300px;
+    border:2px solid #182747;
+    height: 600px;
+    background-color: #D8D8D8;
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 15px;
+    float: right;
+    color:black;
+}
+
+body {
+    background-color: #EEF2FF;
+    /* background-color:aliceblue; */
+    /* font-family: 'Dongle', sans-serif; */
+    /* font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+footer {
+    background-color: #182747;
+    margin: 0;
+    border-top: 2px solid whitesmoke;
+    width: 100%;
+}
+
+form {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+hr {
+    color: whitesmoke ;
+    border: dotted 7px;
+    border-bottom: 0px;
+    width: 10%;
+}
+
+h2 {
+    margin: 20px;
+    color:#182747;
+    font-size: 2rem;
+}
+h3 {
+    margin: 0;
+}
+
+nav {
+    top: 0px;
+    /* border-top: 6px solid white;  */
+    height: 80px;
+    width: 100%;
+    /* background-color: #1572A1; */
+    background-color: #182747;
+    position:sticky;
+    /* top:100px; */
+    margin: 0px;
+    padding: 25px;
+    /* display */
+}
+
+nav a{
+    color:#D8D8D8;
+}
+
+p{
+    margin: 20px;
+}
+
+/* TABLE PROPERTIES */
+td {
+    padding: 2px 15px 2px 15px;
+    /* border: 2px solid whitesmoke;  */
+    line-height: 3.5rem;
+}
+
+/* tr:hover {
+    /* background-color: #1572A1; 
+    color:white;
+
+} */
+table {
+    /* border: 3px solid whitesmoke; */
+    border-collapse: collapse;
+}
+
+input {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 3px solid #182747;
+    padding: 4%;
+}
+.submit-style {
+    /* width: 20%; */
+    margin-top:10px;
+    padding:10px;
+    font-size: 2rem;
+    background-color: #182747;
+    border: white solid 2px;
+    color: azure;
+    border-radius: 10px;
+}
+
+.submit-style:hover {
+    /* width: 20%; */
+    padding:10px 15px;
+    font-size: 2rem;
+    background-color: white;
+    border: white solid 2px;
+    color: #182747;
+    border-radius: 10px;
+}
+
+/**********************************CLASS SELECTORS************************************/
+.about {
+    padding: 5%;
+    padding-top: 1%;
+    margin: 0;
+}
+
+.about p {
+    font-size: 1.5rem;
+}
+
+.footer-image {
+    height: 120px;
+    width: 120px;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+.nav-items {
+    font-size: 24px;
+    position: relative;
+    color:#D8D8D8;
+    /* left: 7%; */
+    bottom: 50%;
+    padding-right: 50px;
+}
+
+.nav-items:hover{
+    color: white;
+    /* transition-delay:2s; */
+}
+
+.welcome {
+    font-size: 3rem;
+    color: #182747;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 3.2rem;
+    text-align: justify;
+}
+
+.user_identity{
+    font-size: 24px;
+    position: relative;
+    color:white;
+    /* left: 7%; */
+    bottom: 50%;
+    padding-right: 50px;
+}
+
+.seller-content{
+    display:flex;
+    position: absolute; 
+    top:150px;
+    align-items: center;
+    margin:50px 240px;
+    justify-content: center;
+
+}
+.seller-content div{
+    padding:50px;
+}
+.seller-content div a{
+    color:#182747;
+}
+.seller-content div a img{
+    width: 250px;
+    border-radius:25px;
+}
+
+hr{
+    color:#182747;
+}
+.bookstyle{
+    border:2px solid black;
+    border-radius:20px;
+    flex: 0 0 25%;
+    background-color:aliceblue;
+    font-size: medium;
+}
+.bookstyle img{
+    padding:20px;
+    border-radius:30px;
+}
+
+.bookpage{
+    padding:20px;
+    font-size:27px;
+}
+
+/* (A) BACKGROUND */
+#boxBack {
+    /* (A1) FULLSCREEN */
+    position: fixed; z-index: 999;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+   
+    /* (A2) TRANSPARENT BACKGROUND */
+    background: rgba(0, 0, 0, 0.5);
+   
+    /* (A3) HIDDEN BY DEFAULT */
+    display: none;
+  }
+   
+  /* (A4) ADD THIS CSS CLASS TO SHOW */
+  #boxBack.show { display: block; }
+   
+  /* (B) DIALOG BOX */
+  #boxWrap {
+    /* (B1) CENTER ON SCREEN */
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+   
+    /* (B2) DIMENSIONS */
+    min-width: 320px; max-width: 600px;
+    padding: 10px;
+   
+    /* (B3) COLORS */
+    background: #fff;
+  }
